@@ -3,9 +3,6 @@
 
 A drop in custom vue component to display a detailed SVG world map with highlightable countries from any country codes passed through an array.
 
-
-
-
 ![App Screenshot](https://i.ibb.co/Q6xZ55y/world-map.png)
 
 
@@ -16,14 +13,13 @@ A drop in custom vue component to display a detailed SVG world map with highligh
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
-
 This component was made for laravel projects with vue installed and uses tailwind for styling.
 
 The component can be called like this and expects an array of uppercase country codes. As with any vue component include it in your app.js file.
 
+When calling the component change the variable $locationCodes to whatever your variable is and make sure it's an array. Multiple codes are supported.
 ```
-<WorldMap :countryIDs="@js($distLocationCodes)" />
+<WorldMap :countryIDs="@js($locationCodes)" />
 ```
 Use the table below for country codes used in the map.
 
